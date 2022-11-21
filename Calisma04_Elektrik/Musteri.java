@@ -1,4 +1,4 @@
-package j99_Team10.Calisma04_Elektrik;
+package Team10Work.Calisma04_Elektrik;
 
 public class Musteri {
 

@@ -1,4 +1,4 @@
-package j99_Team10;
+package Team10Work;
 
 import java.util.Scanner;
 

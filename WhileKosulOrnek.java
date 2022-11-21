@@ -1,4 +1,4 @@
-package j99_Team10;
+package Team10Work;
 
 import java.util.Scanner;
 
@@ -9,6 +9,7 @@ public class WhileKosulOrnek {
         int i=1;
         int adet=0;
         int toplam=0;
+
         while (i!=0){
             System.out.println("sayı giriniz");
             i= sc.nextInt();

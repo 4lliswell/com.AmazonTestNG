@@ -1,4 +1,4 @@
-package j99_Team10.Calisma02_MaasHesabi;
+package Team10Work.Calisma02_MaasHesabi;
 
 import java.time.LocalDate;
 

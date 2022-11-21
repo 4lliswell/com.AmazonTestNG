@@ -1,4 +1,4 @@
-package j99_Team10.Calisma03_MailSifreOlusturma;
+package Team10Work.Calisma03_MailSifreOlusturma;
 
 import java.util.Random;
 import java.util.Scanner;

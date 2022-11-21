@@ -1,4 +1,4 @@
-package j99_Team10.Calisma01;
+package Team10Work.Calisma01;
 
 public class Soru04 {
     public static void main(String[] args) {
