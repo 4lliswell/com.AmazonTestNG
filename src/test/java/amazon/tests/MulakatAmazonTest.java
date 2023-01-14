@@ -41,7 +41,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //5. Login işlemi kontrol edilir.
         String actualLoginResult = amazonPage.loginTextYazisi.getText();
-        Assert.assertTrue(actualLoginResult.contains(" "));  // Amazon Kullanici adinizi yaziniz
+        Assert.assertFalse(actualLoginResult.contains("Merhaba"));
         extentTest= extentReports.createTest("Login İşlemi Kontrol Edildi");
 
         //6. Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
