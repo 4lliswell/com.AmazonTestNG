@@ -30,7 +30,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //3. Çerez tercihlerinden Çerezleri kabul et seçilir.
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.txtCookies.click(); // cookies`i kabul ettik.
-        extentTest= extentReports.createTest("Çerez Tercihlerinden Çerezler Kabul Edildi");
+        extentTest.info("Çerez Tercihlerinden Çerezler Kabul Edildi");
 
         //4. Siteye login olunur.
         ReusableMethods.locateUzerindeBekle(amazonPage.txtGirisYapinPencere);
@@ -38,12 +38,12 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         amazonPage.txtemailBox.sendKeys(ConfigReader.getProperty("amazonEmail") + Keys.ENTER);
         amazonPage.txtPasswordBox.sendKeys(ConfigReader.getProperty("amazonPassword")+Keys.ENTER);
-        extentTest= extentReports.createTest("Siteye Kullanıcı Bilgileriyle Login Olundu");
+        extentTest.info("Siteye Kullanıcı Bilgileriyle Login Olundu");
 
         //5. Login işlemi kontrol edilir.
         String actualLoginResult = amazonPage.loginTextYazisi.getText();
         Assert.assertFalse(actualLoginResult.contains("Merhaba"));
-        extentTest= extentReports.createTest("Login İşlemi Kontrol Edildi");
+        extentTest.info("Login İşlemi Kontrol Edildi");
 
         //6. Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
         Select select = new Select(amazonPage.searchDropdownBox);
