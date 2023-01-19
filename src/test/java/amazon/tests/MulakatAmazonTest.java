@@ -53,7 +53,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //7. Bilgisayar kategorisi seçildiği kontrol edilir.
         String actualSelect = select.getFirstSelectedOption().getText();
         Assert.assertEquals(actualSelect, "Bilgisayarlar");
-        extentTest= extentReports.createTest("Bilgisayar Kategorisi Seçildiği Kontrol Edildi");
+        extentTest.info("Bilgisayar Kategorisi Seçildiği Kontrol Edildi");
 
         //8. Arama alanına MSI yazılır ve arama yapılır.
         amazonPage.txtSearchbox.sendKeys("MSI"+Keys.ENTER);
