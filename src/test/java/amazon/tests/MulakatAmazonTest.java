@@ -57,7 +57,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //8. Arama alanına MSI yazılır ve arama yapılır.
         amazonPage.txtSearchbox.sendKeys("MSI"+Keys.ENTER);
-        extentTest= extentReports.createTest("MSI Araması Yapıldı");
+        extentTest.info("MSI Araması Yapıldı");
 
         //9. Arama yapıldığı kontrol edilir.
         String aramaSonucYazisi = amazonPage.aramaSonucYazisi.getText();
