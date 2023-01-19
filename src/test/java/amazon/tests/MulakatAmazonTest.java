@@ -19,13 +19,13 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //1. https://www.amazon.com.tr/ sitesi açılır.
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
-        extentTest= extentReports.createTest("Amazon Sitesi Açıldı");
+        extentTest.info("Amazon Sitesi Açıldı");
 
         //2. Ana sayfanın açıldığı kontrol edilir.
         String actualUrl = Driver.getDriver().getCurrentUrl();
         String expectedUrl = ConfigReader.getProperty("amazonUrl");
         Assert.assertEquals(actualUrl,expectedUrl);
-        extentTest= extentReports.createTest("Ana Sayfanın Açıldığı Kontrol Edildi");
+        extentTest.info("Ana Sayfanın Açıldığı Kontrol Edildi");
 
         //3. Çerez tercihlerinden Çerezleri kabul et seçilir.
         AmazonPage amazonPage = new AmazonPage();
