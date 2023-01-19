@@ -48,7 +48,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //6. Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
         Select select = new Select(amazonPage.searchDropdownBox);
         select.selectByVisibleText("Bilgisayarlar");
-        extentTest= extentReports.createTest("Bilgisayarlar Kategorisi Seçildi");
+        extentTest.info("Bilgisayarlar Kategorisi Seçildi");
 
         //7. Bilgisayar kategorisi seçildiği kontrol edilir.
         String actualSelect = select.getFirstSelectedOption().getText();
