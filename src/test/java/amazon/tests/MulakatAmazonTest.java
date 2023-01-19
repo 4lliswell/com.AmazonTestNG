@@ -14,7 +14,8 @@ public class MulakatAmazonTest extends TestBaseReport {
 
     @Test
     public void amazonTest() {
-        extentTest= extentReports.createTest("amazonTest");
+        extentTest = extentReports.createTest("amazonTest",
+                "Kullanici Amazon Sitesine Login Sepete Olup Urun Ekleyip Cikarabilmeli ve Cikis Yapabilmeli ");
 
         //1. https://www.amazon.com.tr/ sitesi açılır.
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
