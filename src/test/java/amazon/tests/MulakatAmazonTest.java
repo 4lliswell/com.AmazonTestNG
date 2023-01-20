@@ -62,7 +62,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //9. Arama yapıldığı kontrol edilir.
         String aramaSonucYazisi = amazonPage.aramaSonucYazisi.getText();
         Assert.assertTrue(aramaSonucYazisi.contains("MSI"));
-        extentTest("MSI Araması Yapıldığı Kontrol Edildi");
+        extentTest.info("MSI Araması Yapıldığı Kontrol Edildi");
 
         //10. Arama sonuçları sayfasından 2. sayfa açılır.
         ReusableMethods.javaScriptExcecuter(amazonPage.ikinciSayfa);
