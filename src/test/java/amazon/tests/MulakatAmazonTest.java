@@ -71,7 +71,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //11. 2. sayfanın açıldığı kontrol edilir.
         String actualIkinciSayfaUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualIkinciSayfaUrl.contains("page=2"));
-        extentTest= extentReports.createTest("İkinci Sayfanın Açıldığı Kontrol Edildi");
+        extentTest("İkinci Sayfanın Açıldığı Kontrol Edildi");
 
         //12. Sayfadaki 2. ürün favorilere eklenir.
         amazonPage.secondProduct.click();
