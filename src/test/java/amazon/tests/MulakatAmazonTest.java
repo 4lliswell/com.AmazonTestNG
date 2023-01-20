@@ -66,7 +66,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //10. Arama sonuçları sayfasından 2. sayfa açılır.
         ReusableMethods.javaScriptExcecuter(amazonPage.ikinciSayfa);
-        extentTest("İkinci Sayfaya Geçildi");
+        extentTest.info("İkinci Sayfaya Geçildi");
 
         //11. 2. sayfanın açıldığı kontrol edilir.
         String actualIkinciSayfaUrl = Driver.getDriver().getCurrentUrl();
