@@ -76,7 +76,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //12. Sayfadaki 2. ürün favorilere eklenir.
         amazonPage.secondProduct.click();
         amazonPage.favoriekle.click();
-        extentTest("İkinci Sayfadan İkinci Ürün Favorilere Eklendi");
+        extentTest.info("İkinci Sayfadan İkinci Ürün Favorilere Eklendi");
 
         //13. 2. Ürünün favorilere eklendiği kontrol edilir.
         Assert.assertTrue(amazonPage.wishList.getText().contains("ürün şuraya eklendi:"));
