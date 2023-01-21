@@ -80,7 +80,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //13. 2. Ürünün favorilere eklendiği kontrol edilir.
         Assert.assertTrue(amazonPage.wishList.getText().contains("ürün şuraya eklendi:"));
-        extentTest("Ürünün Eklendiği Kontrol Edildi");
+        extentTest.info("Ürünün Eklendiği Kontrol Edildi");
 
         //14. Hesabım > Favori Listem sayfasına gidilir.
         amazonPage.listDisplayed.click();
