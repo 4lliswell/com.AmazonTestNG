@@ -84,7 +84,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //14. Hesabım > Favori Listem sayfasına gidilir.
         amazonPage.listDisplayed.click();
-        extentTest = extentReports.createTest("Favori Listem Sayfasına Gidildi");
+        extentTest("Favori Listem Sayfasına Gidildi");
 
         //15. “Favori Listem” sayfası açıldığı kontrol edilir.
         String favoriListemUrl = Driver.getDriver().getCurrentUrl();
