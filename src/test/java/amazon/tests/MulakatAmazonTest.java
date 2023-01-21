@@ -33,7 +33,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         extentTest.info("Çerez Tercihlerinden Çerezler Kabul Edildi");
 
         //4. Siteye login olunur.
-        ReusableMethods.locateUzerindeBekle(amazonPage.txtGirisYapinPencere);
+        ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
         ReusableMethods.yukleneneKadarBekle(amazonPage.txtGirisYap);
 
         amazonPage.txtemailBox.sendKeys(ConfigReader.getProperty("amazonEmail") + Keys.ENTER);
