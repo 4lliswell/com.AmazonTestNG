@@ -82,7 +82,6 @@ public class MulakatAmazonTest extends TestBaseReport {
         Assert.assertTrue(amazonPage.wishList.getText().contains("ürün şuraya eklendi:"));
         extentTest= extentReports.createTest("Ürünün Eklendiği Kontrol Edildi");
 
-
         //14. Hesabım > Favori Listem sayfasına gidilir.
         amazonPage.listDisplayed.click();
         extentTest= extentReports.createTest("Favori Listem Sayfasına Gidildi");
@@ -101,7 +100,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         extentTest= extentReports.createTest("Silme İşleminin Gerçekleştiği Kontrol Edildi");
 
         //18. Üye çıkış işlemi yapılır.
-        ReusableMethods.locateUzerindeBekle(amazonPage.txtGirisYapinPencere);
+        ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
         ReusableMethods.yukleneneKadarBekle(amazonPage.exitbutton);
         extentTest= extentReports.createTest("Üye Çıkış İşlemi Yapıldı");
 
