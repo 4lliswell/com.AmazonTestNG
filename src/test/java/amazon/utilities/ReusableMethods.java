@@ -19,9 +19,9 @@ public class ReusableMethods {
         actions.moveToElement(webElement).perform();
     }
 
-    public static void yukleneneKadarBekle ( WebElement webElement){
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(webElement)).click();
+    public static void waitForVisibility(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOf(element)).click();
     }
 
     public static void javaScriptExcecuter(WebElement element){
