@@ -34,7 +34,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //4. Siteye login olunur.
         ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
-        ReusableMethods.yukleneneKadarBekle(amazonPage.txtGirisYap);
+        ReusableMethods.waitForVisibility(amazonPage.txtGirisYap);
 
         amazonPage.txtemailBox.sendKeys(ConfigReader.getProperty("amazonEmail") + Keys.ENTER);
         amazonPage.txtPasswordBox.sendKeys(ConfigReader.getProperty("amazonPassword")+Keys.ENTER);
