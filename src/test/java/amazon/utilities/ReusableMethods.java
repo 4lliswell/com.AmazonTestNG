@@ -14,9 +14,10 @@ import java.util.Date;
 
 public class ReusableMethods {
 
-    public static void locateUzerindeBekle ( WebElement webElement ){
+    public static   void moveToElementHover(WebElement login) {
         Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(webElement).perform();
+        actions.moveToElement(login).perform();
+
     }
 
     public static void waitForVisibility(WebElement element) {
