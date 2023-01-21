@@ -14,7 +14,7 @@ import java.util.Date;
 
 public class ReusableMethods {
 
-    public static   void moveToElementHover(WebElement login) {
+    public static void moveToElementHover(WebElement login) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(login).perform();
 
@@ -25,10 +25,10 @@ public class ReusableMethods {
         wait.until(ExpectedConditions.visibilityOf(element)).click();
     }
 
-    public static void javaScriptExcecuter(WebElement element){
+    public static void javaScriptExcecuter(WebElement element) {
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-        js.executeScript("arguments[0].click()",element);
+        js.executeScript("arguments[0].click()", element);
     }
 
     public static String getScreenshot(WebDriver driver, String name) throws IOException {
@@ -37,18 +37,18 @@ public class ReusableMethods {
         String date = formatCurrentDate(" yyyy.MM.dd_HH.mm.ss"); // asagida olusturdugumuz methodu kullandik.
 
         // Screenshot alip file objesine atiyoruz.
-        File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         // Kaydedilecek dosyanin yolunu belirtiyoruz.
-        String target = System.getProperty("user.dir")+ "\\test-output\\screenshot\\"+name+date+".png";
+        String target = System.getProperty("user.dir") + "\\test-output\\screenshot\\" + name + date + ".png";
 
         File targetFile = new File(target);
-        FileUtils.copyFile(source,targetFile);
+        FileUtils.copyFile(source, targetFile);
 
         return target;
     }
 
-    public static String formatCurrentDate(String pattern){
+    public static String formatCurrentDate(String pattern) {
 
         return new SimpleDateFormat(pattern).format(new Date());
     }

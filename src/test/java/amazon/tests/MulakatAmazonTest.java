@@ -24,7 +24,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //2. Ana sayfanın açıldığı kontrol edilir.
         String actualUrl = Driver.getDriver().getCurrentUrl();
         String expectedUrl = ConfigReader.getProperty("amazonUrl");
-        Assert.assertEquals(actualUrl,expectedUrl);
+        Assert.assertEquals(actualUrl, expectedUrl);
         extentTest.info("Ana Sayfanın Açıldığı Kontrol Edildi");
 
         //3. Çerez tercihlerinden Çerezleri kabul et seçilir.
@@ -37,7 +37,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         ReusableMethods.waitForVisibility(amazonPage.txtGirisYap);
 
         amazonPage.txtemailBox.sendKeys(ConfigReader.getProperty("amazonEmail") + Keys.ENTER);
-        amazonPage.txtPasswordBox.sendKeys(ConfigReader.getProperty("amazonPassword")+Keys.ENTER);
+        amazonPage.txtPasswordBox.sendKeys(ConfigReader.getProperty("amazonPassword") + Keys.ENTER);
         extentTest.info("Siteye Kullanıcı Bilgileriyle Login Olundu");
 
         //5. Login işlemi kontrol edilir.
@@ -56,7 +56,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         extentTest.info("Bilgisayar Kategorisi Seçildiği Kontrol Edildi");
 
         //8. Arama alanına MSI yazılır ve arama yapılır.
-        amazonPage.txtSearchbox.sendKeys("MSI"+Keys.ENTER);
+        amazonPage.txtSearchbox.sendKeys("MSI" + Keys.ENTER);
         extentTest.info("MSI Araması Yapıldı");
 
         //9. Arama yapıldığı kontrol edilir.
@@ -76,40 +76,40 @@ public class MulakatAmazonTest extends TestBaseReport {
         //12. Sayfadaki 2. ürün favorilere eklenir.
         amazonPage.secondProduct.click();
         amazonPage.favoriekle.click();
-        extentTest= extentReports.createTest("İkinci Sayfadan İkinci Ürün Favorilere Eklendi");
+        extentTest("İkinci Sayfadan İkinci Ürün Favorilere Eklendi");
 
         //13. 2. Ürünün favorilere eklendiği kontrol edilir.
         Assert.assertTrue(amazonPage.wishList.getText().contains("ürün şuraya eklendi:"));
-        extentTest= extentReports.createTest("Ürünün Eklendiği Kontrol Edildi");
+        extentTest = extentReports.createTest("Ürünün Eklendiği Kontrol Edildi");
 
         //14. Hesabım > Favori Listem sayfasına gidilir.
         amazonPage.listDisplayed.click();
-        extentTest= extentReports.createTest("Favori Listem Sayfasına Gidildi");
+        extentTest = extentReports.createTest("Favori Listem Sayfasına Gidildi");
 
         //15. “Favori Listem” sayfası açıldığı kontrol edilir.
         String favoriListemUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(favoriListemUrl.contains("wishlist"));
-        extentTest= extentReports.createTest("Favori Listem Sayfasının Açıldığı Kontrol Edildi");
+        extentTest = extentReports.createTest("Favori Listem Sayfasının Açıldığı Kontrol Edildi");
 
         //16. Eklenen ürün favorilerden silinir.
         amazonPage.deleteButon.click();
-        extentTest= extentReports.createTest("Ürün Favorilerden Silindi");
+        extentTest = extentReports.createTest("Ürün Favorilerden Silindi");
 
         //17. Silme işleminin gerçekleştiği kontrol edilir.
         Assert.assertTrue(amazonPage.silindi.isDisplayed());
-        extentTest= extentReports.createTest("Silme İşleminin Gerçekleştiği Kontrol Edildi");
+        extentTest = extentReports.createTest("Silme İşleminin Gerçekleştiği Kontrol Edildi");
 
         //18. Üye çıkış işlemi yapılır.
         ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
         ReusableMethods.waitForVisibility(amazonPage.exitbutton);
-        extentTest= extentReports.createTest("Üye Çıkış İşlemi Yapıldı");
+        extentTest = extentReports.createTest("Üye Çıkış İşlemi Yapıldı");
 
         //19. Çıkış işleminin yapıldığı kontrol edilir.
         Assert.assertTrue(amazonPage.girisButon.isDisplayed());
-        extentTest= extentReports.createTest("Çıkış İşleminin Yapıldığı Kontrol Edili");
+        extentTest = extentReports.createTest("Çıkış İşleminin Yapıldığı Kontrol Edili");
 
 
         Driver.closeDriver();
-        extentTest= extentReports.createTest("Browser Kapatıldı");
+        extentTest = extentReports.createTest("Browser Kapatıldı");
     }
 }
