@@ -93,7 +93,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //16. Eklenen ürün favorilerden silinir.
         amazonPage.deleteButon.click();
-        extentTest = extentReports.createTest("Ürün Favorilerden Silindi");
+        extentTest("Ürün Favorilerden Silindi");
 
         //17. Silme işleminin gerçekleştiği kontrol edilir.
         Assert.assertTrue(amazonPage.silindi.isDisplayed());
