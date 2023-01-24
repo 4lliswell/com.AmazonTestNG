@@ -89,7 +89,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //15. “Favori Listem” sayfası açıldığı kontrol edilir.
         String favoriListemUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(favoriListemUrl.contains("wishlist"));
-        extentTest("Favori Listem Sayfasının Açıldığı Kontrol Edildi");
+        extentTest.info("Favori Listem Sayfasının Açıldığı Kontrol Edildi");
 
         //16. Eklenen ürün favorilerden silinir.
         amazonPage.deleteButon.click();
