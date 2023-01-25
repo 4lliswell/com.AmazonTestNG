@@ -102,7 +102,7 @@ public class MulakatAmazonTest extends TestBaseReport {
         //18. Üye çıkış işlemi yapılır.
         ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
         ReusableMethods.waitForVisibility(amazonPage.exitbutton);
-        extentTest("Üye Çıkış İşlemi Yapıldı");
+        extentTest.info("Üye Çıkış İşlemi Yapıldı");
 
         //19. Çıkış işleminin yapıldığı kontrol edilir.
         Assert.assertTrue(amazonPage.girisButon.isDisplayed());
