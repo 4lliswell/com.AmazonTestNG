@@ -97,7 +97,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //17. Silme işleminin gerçekleştiği kontrol edilir.
         Assert.assertTrue(amazonPage.silindi.isDisplayed());
-        extentTest("Silme İşleminin Gerçekleştiği Kontrol Edildi");
+        extentTest.info("Silme İşleminin Gerçekleştiği Kontrol Edildi");
 
         //18. Üye çıkış işlemi yapılır.
         ReusableMethods.moveToElementHover(amazonPage.txtGirisYapinPencere);
