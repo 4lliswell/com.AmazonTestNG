@@ -106,7 +106,7 @@ public class MulakatAmazonTest extends TestBaseReport {
 
         //19. Çıkış işleminin yapıldığı kontrol edilir.
         Assert.assertTrue(amazonPage.girisButon.isDisplayed());
-        extentTest("Çıkış İşleminin Yapıldığı Kontrol Edili");
+        extentTest.info("Çıkış İşleminin Yapıldığı Kontrol Edili");
 
 
         Driver.closeDriver();
