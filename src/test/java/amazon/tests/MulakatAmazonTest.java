@@ -110,6 +110,6 @@ public class MulakatAmazonTest extends TestBaseReport {
 
 
         Driver.closeDriver();
-        extentTest = extentReports.createTest("Browser Kapatıldı");
+        extentTest("Browser Kapatıldı");
     }
 }
