@@ -33,13 +33,10 @@ public class ReusableMethods {
 
     public static String getScreenshot(WebDriver driver, String name) throws IOException {
 
-        // Screenshot dosya ismi icin suanki tarihi String olarak aliyoruz.
-        String date = formatCurrentDate(" yyyy.MM.dd_HH.mm.ss"); // asagida olusturdugumuz methodu kullandik.
+        String date = formatCurrentDate(" yyyy.MM.dd_HH.mm.ss");
 
-        // Screenshot alip file objesine atiyoruz.
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-        // Kaydedilecek dosyanin yolunu belirtiyoruz.
         String target = System.getProperty("user.dir") + "\\test-output\\screenshot\\" + name + date + ".png";
 
         File targetFile = new File(target);

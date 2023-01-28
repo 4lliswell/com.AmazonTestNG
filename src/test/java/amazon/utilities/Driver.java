@@ -14,7 +14,6 @@ public class Driver {
 
     public static WebDriver getDriver() {
 
-        //properties dosyasinin icerisindeki "browser" anahtarinin degerini getirecek ---> chrome
         String browser = ConfigReader.getProperty("browser");
 
         if (driver == null) {
