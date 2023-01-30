@@ -1,17 +1,33 @@
 # Amazon.TestNG.POM.Project
-Amazon Senaryosu 
 
-o	https://www.amazon.com.tr/ sitesi açılır.
-o	Ana sayfanın açıldığı kontrol edilir.
-o	Çerez tercihlerinden Çerezleri kabul et seçilir.
-o	Siteye login olunur.
-o	Login işlemi kontrol edilir.
-o	Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
-o	Bilgisayar kategorisi seçildiği kontrol edilir.
-o	Arama alanına MSI yazılır ve arama yapılır.
-o	Arama yapıldığı kontrol edilir.
-o	Arama sonuçları sayfasından 2. sayfa açılır.
-o	2. sayfanın açıldığı kontrol edilir.
-o	Sayfadaki 2. ürün favorilere eklenir.
-o	2. Ürünün favorilere eklendiği kontrol edilir.
-o	Hesabım > Favori Listem sayfasına gidilir.
+# Proje Hazırlanırken Dikkat Edilmesi Gerekenler
+●	Proje Java programlama dilinde yazılmalıdır.
+●	Kodlar GitHub üzerinden paylaşılması gereklidir.
+(Fmharmanci ve VirgosolQA kullanıcı adları ile proje paylaşılacaktır.)
+●	Yazılacak senaryo için Selenium ve JUnit kullanılmalıdır.
+●	Assertions kullanarak senaryonun doğru çalışırlığı kontrol edilmelidir.
+●	Log4j kullanılmalıdır.
+●	Page Object Model uygulanmalıdır.
+●	OOP prensiplerine uygun geliştirilmelidir.
+
+# Amazon Senaryosu 
+
+●	https://www.amazon.com.tr/ sitesi açılır.
+● Ana sayfanın açıldığı kontrol edilir.
+●	Çerez tercihlerinden Çerezleri kabul et seçilir.
+●	Siteye login olunur.
+●	Login işlemi kontrol edilir.
+●	Arama butonu yanındaki kategoriler tabından bilgisayar seçilir.
+●	Bilgisayar kategorisi seçildiği kontrol edilir.
+●	Arama alanına MSI yazılır ve arama yapılır.
+●	Arama yapıldığı kontrol edilir.
+●	Arama sonuçları sayfasından 2. sayfa açılır.
+●	2. sayfanın açıldığı kontrol edilir.
+●	Sayfadaki 2. ürün favorilere eklenir.
+●	2. Ürünün favorilere eklendiği kontrol edilir.
+●	Hesabım > Favori Listem sayfasına gidilir.
+●	“Favori Listem” sayfası açıldığı kontrol edilir.
+●	Eklenen ürün favorilerden silinir.
+●	Silme işleminin gerçekleştiği kontrol edilir.
+●	Üye çıkış işlemi yapılır.
+●	Çıkış işleminin yapıldığı kontrol edilir.
