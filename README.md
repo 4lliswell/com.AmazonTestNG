@@ -1,10 +1,6 @@
 # Proje Hazırlanırken Dikkat Edilmesi Gerekenler
 ●	Proje Java programlama dilinde yazılmalıdır.
 
-●	Kodlar GitHub üzerinden paylaşılması gereklidir.
-
-(Fmharmanci ve VirgosolQA kullanıcı adları ile proje paylaşılacaktır.)
-
 ●	Yazılacak senaryo için Selenium ve JUnit kullanılmalıdır.
 
 ●	Assertions kullanarak senaryonun doğru çalışırlığı kontrol edilmelidir.
