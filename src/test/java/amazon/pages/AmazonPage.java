@@ -18,7 +18,7 @@ public class AmazonPage {
     @FindBy(xpath = "//a[@id='nav-link-accountList']")
     public WebElement txtGirisYapinPencere;
 
-    @FindBy(xpath = "//a[@class='nav-action-button']")
+    @FindBy(xpath = "//a[@class='nav-action-signin-button']")
     public WebElement txtGirisYap;
 
     @FindBy(xpath = "//input[@id='ap_email']")
@@ -65,21 +65,5 @@ public class AmazonPage {
 
     @FindBy(xpath= "//h1[@class='a-spacing-small']")
     public WebElement girisButon;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
