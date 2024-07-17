@@ -14,10 +14,9 @@ import java.util.Date;
 
 public class ReusableMethods {
 
-    public static void moveToElementHover(WebElement login) {
+    public static void moveToElementHover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
-        actions.moveToElement(login).perform();
-
+        actions.moveToElement(element).perform();
     }
 
     public static void waitForVisibility(WebElement element) {
@@ -25,15 +24,14 @@ public class ReusableMethods {
         wait.until(ExpectedConditions.visibilityOf(element)).click();
     }
 
-    public static void javaScriptExcecuter(WebElement element) {
-
-        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-        js.executeScript("arguments[0].click()", element);
+    public static void clickElementByJS(WebElement element) {
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
+        jsexecutor.executeScript("arguments[0].click();", element);
     }
 
     public static String getScreenshot(WebDriver driver, String name) throws IOException {
 
-        String date = formatCurrentDate(" yyyy.MM.dd_HH.mm.ss");
+        String date = formatCurrentDate(" yyyy MM dd_HH mm ss");
 
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
@@ -49,6 +47,4 @@ public class ReusableMethods {
 
         return new SimpleDateFormat(pattern).format(new Date());
     }
-
-
 }
