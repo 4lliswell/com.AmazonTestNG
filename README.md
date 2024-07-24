@@ -1,6 +1,7 @@
-# Amazon Web Sitesi için Selenium TestNG Otomasyon Testi
+# Amazon Web Sitesi Selenium TestNG Otomasyon Testi
 
 Bu proje, Selenium ve TestNG kullanılarak Amazon Türkiye sitesi üzerinde otomasyon testleri yapmak amacıyla geliştirilmiştir.
+Amazon web sitesine yönelik login olma, ürün arama, sepete ürün ekleme, sepet işlemlerini doğrulama gibi çeşitli işlevlere odaklanmaktadır.
 
 ## Proje Amaçları
 
