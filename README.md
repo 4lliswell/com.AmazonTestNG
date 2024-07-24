@@ -1,4 +1,4 @@
-# Amazon Otomasyon Testi
+# Amazon Web Sitesi için Selenium TestNG Otomasyon Testi
 
 Bu proje, Selenium ve TestNG kullanılarak Amazon Türkiye sitesi üzerinde otomasyon testleri yapmak amacıyla geliştirilmiştir.
 
@@ -30,8 +30,8 @@ Bu proje, Selenium ve TestNG kullanılarak Amazon Türkiye sitesi üzerinde otom
 
 2. **Bağımlılıkları Yükleyin:**
 
-   ```bash
-   mvn clean install
+   ```
+   pom.xml
    ```
 
 ## Nasıl Kullanılır
