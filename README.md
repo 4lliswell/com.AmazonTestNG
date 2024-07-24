@@ -31,9 +31,9 @@ Amazon web sitesine yönelik login olma, ürün arama, sepete ürün ekleme, sep
 
 2. **Bağımlılıkları Yükleyin:**
 
-   ```
+
    pom.xml
-   ```
+   
 
 ## Nasıl Kullanılır
 
